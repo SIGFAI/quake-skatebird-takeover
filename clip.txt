@@ -1,0 +1,5 @@
+1. [x] Three SkateBIRDs on skateboards roll toward the player with the banner "SkateBIRDs have taken over!"
+2. [x] The player's nailgun/rockets hurt a bird: feathers burst, pain tweet, bird dies
+3. [x] Trick combo text appears on kills (OLLIE!, KICKFLIP!, HEELFLIP! with score)
+4. [ ] A bird does a spinning kickflip leap at the player (coded, not clearly seen in screenshots: weak)
+5. [x] A golden feather drops and is picked up; the big boss bird comes in waves 2, 5 and 8 (not captured in a screenshot: weak)

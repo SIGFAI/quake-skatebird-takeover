@@ -1,0 +1,1 @@
+Copy the mod folder into your Quake (Ironwail or LibreQuake) directory and start the game with -game <folder name>. Load a map such as lq_e0m1 and watch the skateboarding birds attack.
