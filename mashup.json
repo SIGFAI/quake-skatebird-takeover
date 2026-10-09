@@ -1,0 +1,264 @@
+{
+  "id": "sigf/quake-skatebird-takeover",
+  "version": "1.0.0",
+  "name": "SkateBIRD Takeover",
+  "tagline": "Bring SkateBIRD into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "quake",
+      "role": "host",
+      "engine": "Ironwail 0.8.2 + LibreQuake 0.09 data, QuakeC 1.06 compiled with FTEQCC"
+    },
+    {
+      "game": "skatebird",
+      "role": "guest",
+      "label": "SkateBIRD"
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "quake",
+      "strategy": "args",
+      "files": [
+        {
+          "src": "quake-skatebird-takeover.zip",
+          "dst": "{game}/sigf_skatebird_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "progs/sigf_bigbird.mdl",
+              "sha256": "0ff4e2de6e3a56a57034a2e78488009cdda91bf78931ec7207fdf623d6a8e177"
+            },
+            {
+              "path": "progs/sigf_bird.mdl",
+              "sha256": "d22d34458591c6f4743b0408a20a47804f806c202366f67d22dbca143bbc324f"
+            },
+            {
+              "path": "progs/sigf_feather.spr",
+              "sha256": "c94f6a925cd7c90ed8666f6b48b059d888d92f07c9395449833b930c825e1f48"
+            },
+            {
+              "path": "progs.dat",
+              "sha256": "65fe83aa1fcf243f742869eb69a1973abab49182c4a5d8209b51ada991371334"
+            },
+            {
+              "path": "sound/sigf/squawk.wav",
+              "sha256": "5eb40b08330feeeff67dec674d49e0a7d2b5a260277c3852ea81b387eda8ea54"
+            },
+            {
+              "path": "sound/sigf/trick.wav",
+              "sha256": "fe6cea2945a7b2ef1fec2ba56cabfa48e7a7448057f30c75f9f8dc98ffdc0c9f"
+            },
+            {
+              "path": "sound/sigf/tweet.wav",
+              "sha256": "c2857c9fa1b773e58b35948b67f35f0cefd00d77da17a37841868c5773c6e39d"
+            },
+            {
+              "path": "src/ai.qc",
+              "sha256": "133a153a3b4bbd78b584ad6370c40ef8f9584e4ea13f1fe0409f13ca87936abb"
+            },
+            {
+              "path": "src/amtest.qc",
+              "sha256": "98df62c0bc36714f925ef407449d3dafef00c109d07d481b72b141e675bd27d8"
+            },
+            {
+              "path": "src/boss.qc",
+              "sha256": "5d9b4f4d8f7c9daf3743bcbd4e0eb5d6429bc1802664e5103270fa6453d16da5"
+            },
+            {
+              "path": "src/buttons.qc",
+              "sha256": "528536cd3906716380d058f97dd5e6ec6978f4eed9916cc32e2e9bd62a308dae"
+            },
+            {
+              "path": "src/client.qc",
+              "sha256": "ce25bfe2d1debec1f2e8428d9b197a7f5d519257c8a7b1ce93cb9cc191123025"
+            },
+            {
+              "path": "src/combat.qc",
+              "sha256": "226e4a4835fd4b947e38664d410e9f92189475c99d4c67abf28e50d4c15b0a17"
+            },
+            {
+              "path": "src/COPYING",
+              "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+            },
+            {
+              "path": "src/defs.qc",
+              "sha256": "bf697184032be6d3747587f5fb85e21398c31ffec80282759acba69d32770b13"
+            },
+            {
+              "path": "src/demon.qc",
+              "sha256": "95957675592243cbf962a0a320f222d6c3276ddd7539e6fa5cdb4cb6702b3797"
+            },
+            {
+              "path": "src/dog.qc",
+              "sha256": "f9208c3d6108ad160d341e5516c7c8729b5df2787f661d83232d42d7daf57113"
+            },
+            {
+              "path": "src/doors.qc",
+              "sha256": "9787f24ed7169bf7092a9cd9f3fafec9f19934c623f44e6c7411736739f44422"
+            },
+            {
+              "path": "src/enforcer.qc",
+              "sha256": "747141f3df406f5e81d14c411454d824293555be8ae71524ecb3f5aa4b23de9f"
+            },
+            {
+              "path": "src/fight.qc",
+              "sha256": "4e3c2bb86dd91646f9ac69cc488316996a83144e4024006a8d04ff84432fa583"
+            },
+            {
+              "path": "src/fish.qc",
+              "sha256": "bf68cb0c616c343823cdbb0d2bc1550395c8a1a728240043b3f5550c24e4bb2e"
+            },
+            {
+              "path": "src/flag.qc",
+              "sha256": "f4a976753a9daa481521ff22587dca949e99c5646328d01a916b5198e59a9501"
+            },
+            {
+              "path": "src/hknight.qc",
+              "sha256": "499a5042f7cf961178ad659b05598850585099ad369f1ba5358bdf5094c888c2"
+            },
+            {
+              "path": "src/items.qc",
+              "sha256": "4ba955fc1f65517772c10b5040e2aa543535f552f0ea7f55dcb61ff3b570e11e"
+            },
+            {
+              "path": "src/jctest.qc",
+              "sha256": "5d94a44c00c43f2fd6389b23c840b9af3813b1f470b3f9b3fb2bcc800f297f80"
+            },
+            {
+              "path": "src/knight.qc",
+              "sha256": "28093345870579acde2e375e9983ce211fc29dbd7609c584f39e9f5c91b3131f"
+            },
+            {
+              "path": "src/misc.qc",
+              "sha256": "fc9b10e40aa6215138ead5cb667d95e3f5d4f1daf8401f8afc79360332664109"
+            },
+            {
+              "path": "src/models.qc",
+              "sha256": "86365a77f680b11ca5383075e529359c5f37ce8f525ca97a2f6aa85453fd299e"
+            },
+            {
+              "path": "src/monsters.qc",
+              "sha256": "4ab99f45676d5afa5881cb90abc3a33e9d5b18edf79bd705b3c32a93379a2af4"
+            },
+            {
+              "path": "src/ogre.qc",
+              "sha256": "6a894f7078aab8e023d55fef335ee1dda86375870de3713e9e4059b62bd04c6c"
+            },
+            {
+              "path": "src/oldone.qc",
+              "sha256": "35495e76f38a26b28b5d7fa500028b2459a8385e2994ea8a3926b74b177de006"
+            },
+            {
+              "path": "src/plats.qc",
+              "sha256": "0d20c4f65f06f7aa280fd7ab7fe0e26e1f4cabff7c018d3c211241dcfd4a246a"
+            },
+            {
+              "path": "src/player.qc",
+              "sha256": "547fc4c61534930428e8d28ea31b58993bbe2b729dbc02b4537e76b5c0b9a1fe"
+            },
+            {
+              "path": "src/progs.src",
+              "sha256": "19acb2e300da0f554e8fc76615f2f0918e8f21487d3d4537355533c21f7ddce2"
+            },
+            {
+              "path": "src/shalrath.qc",
+              "sha256": "24c3525d0523fddd3614556d52b34b39a107681ed2d9ea7736dba166dac07bb2"
+            },
+            {
+              "path": "src/shambler.qc",
+              "sha256": "ec0f2404252f0bd8d0aebc909119ad5a31842480087f41422b98f89240553f15"
+            },
+            {
+              "path": "src/sigf_base.qc",
+              "sha256": "c7cc9d0461f948878046e5d2354861ef1af9c8c2866c292bbd3cc1c260eb9f84"
+            },
+            {
+              "path": "src/sigf_pilot.qc",
+              "sha256": "1bd4bf39d1f7492d11b36ec7c2efa52f61bf2f6746eae674a02bea344c0e4829"
+            },
+            {
+              "path": "src/sigf.qc",
+              "sha256": "2a273ac7480832aed2d44dd2488f6084b80f8b526ff511e5f8131a4d7438132f"
+            },
+            {
+              "path": "src/soldier.qc",
+              "sha256": "1d1d30f484acd544ff918ff2f84017c5f205581a4e7e39342ab0f09c91ba7346"
+            },
+            {
+              "path": "src/sprites.qc",
+              "sha256": "aaae4b833083e26ec34a4b52938beadb55bfbd49b8fc83de3787299cb6689ec3"
+            },
+            {
+              "path": "src/subs.qc",
+              "sha256": "1c97293809cf189a5cd3e638e74ffe3220ec8856c15a9ea838ea1e3e0932a352"
+            },
+            {
+              "path": "src/tarbaby.qc",
+              "sha256": "28b0ef71024c4e828c3a0e7b921372e6a704b58841d002aa7da6e1cf516e0c2b"
+            },
+            {
+              "path": "src/triggers.qc",
+              "sha256": "a5919f514103b938ab6eae56dd894324a4c9365b6ad57132f7ebc895fee03d38"
+            },
+            {
+              "path": "src/weapons.qc",
+              "sha256": "6b5b1407c3cf9d179bc0302e7896181816adc2ecee014f4394b2896610300da9"
+            },
+            {
+              "path": "src/wizard.qc",
+              "sha256": "e3b7214f92044ae1899a02bd0d570a4c97af84fe164aef335a25e247b95a333d"
+            },
+            {
+              "path": "src/world.qc",
+              "sha256": "9a5c46e2fa302648cfc1a306d6f4903dd24dec0500d6e6620822cae00387e1b0"
+            },
+            {
+              "path": "src/zombie.qc",
+              "sha256": "baf65deea290465ead67c594c5c0ed4fc737965d024f45f1bedeee94d67aa683"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/quake-skatebird-takeover/releases/download/v1.0.0/quake-skatebird-takeover.zip",
+          "sha256": "3d4a5408d24782f5e1a0161a16233e0cb54009c57912e6ac09b562ee52ed32ef",
+          "size": 622594
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "quake",
+      "args": [
+        "-game",
+        "sigf_skatebird_takeover"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "quake-skatebird-takeover.zip",
+      "url": "https://github.com/SIGFAI/quake-skatebird-takeover/releases/download/v1.0.0/quake-skatebird-takeover.zip",
+      "sha256": "3d4a5408d24782f5e1a0161a16233e0cb54009c57912e6ac09b562ee52ed32ef",
+      "size": 622594
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/quake-skatebird-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-09-390ea778.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "quake",
+    "status": "draft"
+  },
+  "built_at": "2026-10-09T01:38:04.753Z"
+}
